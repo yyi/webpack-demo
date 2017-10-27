@@ -13,7 +13,7 @@ const commonConfig = {
 
     },
     resolve: {
-        extensions: ['.ts', '.js', '.json']
+        extensions: ['.ts', '.js', '.json'],
     },
     module: {
 
