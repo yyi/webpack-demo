@@ -49,7 +49,8 @@ const commonConfig = {
         filename: '[name].js',
     },
     plugins: [
-        new HtmlWebpackPlugin({title: 'Webpack Demo'}),
+        new webpack.optimize.ModuleConcatenationPlugin(),//generated javascript closure optimize
+        new HtmlWebpackPlugin({title: 'Webpack Demo',}),
         new webpack.LoaderOptionsPlugin({
             options: {
                 eslint: {
